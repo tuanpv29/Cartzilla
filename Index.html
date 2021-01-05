@@ -9,7 +9,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="Styles.css">
+  <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -18,47 +18,237 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-md bg-white navbar-light py-3">
+  <nav class="navbar navbar-expand-lg bg-white navbar-light py-3">
     <div class="container">
-      <a class="navbar-brand" href="#">Cartzilla</a>
-      <button class="navbar-toggler" type="button" data-toggler="collapse" data-target="#collapsibleNavbar">
+      <a class="navbar-brand d-none d-sm-block" href="index.html">
+        <img src="https://cartzilla.createx.studio/img/logo-dark.png" alt="Logo" width="142">
+      </a>
+      <a class="navbar-brand d-sm-none" href="index.html">
+        <img src="https://cartzilla.createx.studio/img/logo-icon.png" alt="Logo" width="74">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbardrop" data-toggle="dropdown">Home</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">
+                <span class="d-block">Fashion Store v.1</span>
+                <small class="text-muted">Classic shop layout</small>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <span class="d-block">Electronics Store</span>
+                <small class="text-muted">Slider + Promo banners</small>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <span class="d-block">Marketplace</span>
+                <small class="text-muted">Multi-vendor, digital goods</small>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <span class="d-block">Grocery Store</span>
+                <small class="text-muted">Full width + Side menu</small>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <span class="d-block">Food Delivery Service</span>
+                <small class="text-muted">Food & Beverages delivery</small>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <span class="d-block">Fashion store v.2</span>
+                <small class="text-muted">Slider + Featured categories</small>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <span class="d-block">Single Product Store</span>
+                <small class="text-muted">Single product / mono brand</small>
+              </a>
+            </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Shop</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Shop</a>
+            <div class="dropdown-menu">
+              <div class="d-flex">
+                <div style="width: 15rem;">
+                  <div>
+                    <h6>Shop layouts</h6>
+                    <ul class="list-unstyled">
+                      <li>
+                        <a href="#">Shop Grid - Left Sidebar</a>
+                      </li>
+                      <li>
+                        <a href="#">Shop Grid - Right Sidebar</a>
+                      </li>
+                      <li>
+                        <a href="#">Shop Grid - Filters on Top</a>
+                      </li>
+                      <li>
+                        <a href="#">Shop List - Left Sidebar</a>
+                      </li>
+                      <li>
+                        <a href="#">Shop List - Right Sidebar</a>
+                      </li>
+                      <li>
+                        <a href="#">Shop List - Filters on Top</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h6>Marketplace</h6>
+                    <ul class="list-unstyled">
+                      <li>
+                        <a href="#">Category Page</a>
+                      </li>
+                      <li>
+                        <a href="#">Single Item Page</a>
+                      </li>
+                      <li>
+                        <a href="#">Cendor Page</a>
+                      </li>
+                      <li>
+                        <a href="#">Cart</a>
+                      </li>
+                      <li>
+                        <a href="#">Checkout</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div style="width: 15rem;">
+                  <h6>Shop pages</h6>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#">Shop categories</a>
+                    </li>
+                    <li>
+                      <a href="#">Product Page v.1</a>
+                    </li>
+                    <li>
+                      <a href="#">Product Page v.2</a>
+                    </li>
+                    <li>
+                      <a href="#">Cart</a>
+                    </li>
+                    <li>
+                      <a href="#">Checkout - Details</a>
+                    </li>
+                    <li>
+                      <a href="#">Checkout - Shipping</a>
+                    </li>
+                    <li>
+                      <a href="#">Checkout - Payment</a>
+                    </li>
+                    <li>
+                      <a href="#">Checkout - Review</a>
+                    </li>
+                    <li>
+                      <a href="#">Checkout - Complete</a>
+                    </li>
+                    <li>
+                      <a href="#">Order tracking</a>
+                    </li>
+                    <li>
+                      <a href="#">Product Comparision</a>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <div>
+                    <h6>Grocery store</h6>
+                    <ul class="list-unstyled">
+                      <li>
+                        <a href="#">Product Catalog</a>
+                      </li>
+                      <li>
+                        <a href="#">Single Product Page</a>
+                      </li>
+                      <li>
+                        <a href="#">Checkout</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h6>Food Delivery</h6>
+                    <ul class="list-unstyled">
+                      <li>
+                        <a href="#">Category Page</a>
+                      </li>
+                      <li>
+                        <a href="#">Single Item (Resturant)</a>
+                      </li>
+                      <li>
+                        <a href="#">Cart (Your Order)</a>
+                      </li>
+                      <li>
+                        <a href="#">Checkout (Address & Payment)</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Account</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Account</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Shop User Acconut</a>
+              <a class="dropdown-item" href="#">Ventor Dashboard</a>
+              <a class="dropdown-item" href="#">Sign In / Sign Up</a>
+              <a class="dropdown-item" href="#">Password Recovery</a>
+            </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pages</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Pages</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Navbar Variants</a>
+              <a class="dropdown-item" href="#">About Us</a>
+              <a class="dropdown-item" href="#">Contacts</a>
+              <a class="dropdown-item" href="#">Help Center</a>
+              <a class="dropdown-item" href="#">404 Not Found</a>
+            </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Blog</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Blog</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Blog List Layout</a>
+              <a class="dropdown-item" href="#">Blog Grid Layout</a>
+              <a class="dropdown-item" href="#">Single Post Layouts</a>
+            </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Docs/Components</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Docs/Components</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Link 1</a>
+              <a class="dropdown-item" href="#">Link 2</a>
+              <a class="dropdown-item" href="#">Link 3</a>
+              <a class="dropdown-item" href="#">Link 4</a>
+            </div>
           </li>
         </ul>
-        <button class="btn btn-primary ml-auto">Buy now</button>
+        <button class="btn btn-primary shadow text-nowrap ml-auto my-4 my-md-0">
+          <i class="fas fa-shopping-cart"></i>Buy now
+        </button>
       </div>
     </div>
   </nav>
   <section>
     <div id="bg-image" class="row text-white py-7">
       <div class="col-md-6 text-center mx-auto">
-        <h1><span class="font-weight-light">Multipurpose</span> Bootstrap 4 E-Commerce <span
+        <h1 class="pb-sm-3"><span class="font-weight-light">Multipurpose</span> Bootstrap 4 E-Commerce <span
             class="font-weight-light">Template</span></h1>
         <p class="lead">Single / Multi-vendor <span class="h4">Marketplace</span> Fashion <span
             class="h4">Electronics</span> Cart <span class="h4">Grocery store</span> Checkout <span class="h4">Food
             Delivery</span> Account /
           Dashboard</p>
-        <button class="btn btn-primary">View Demos</button>
+        <div class="py-4 py-sm-5">
+          <button class="btn btn-primary shadow" href="#">View Demos<i
+              class="fas fa-chevron-circle-down mr-0 ml-2"></i></button>
+        </div>
       </div>
     </div>
   </section>
@@ -163,7 +353,8 @@
         <div class="col-md-6 mb-4">
           <div class="card border-0">
             <div>
-              <img src="https://cartzilla.createx.studio/img/home/preview/coming.png" alt="Plus" width="100%" height="auto">
+              <img src="https://cartzilla.createx.studio/img/home/preview/coming.png" alt="Plus" width="100%"
+                height="auto">
             </div>
             <div class="card-body text-center">
               <h4 class="card-title">Coming Soon</h4>
@@ -183,16 +374,17 @@
             <p class="text-white-50">All you need for your next e-commerce project</p>
           </div>
           <ul class="list-unstyled">
-            <li>Shop Grid / List Layout Options</li>
-            <li>Multiple Product Page Variations</li>
-            <li>Complete Order Workflow: Cart + Checkout</li>
-            <li>Shop Customer Account Pages</li>
-            <li>Vendor Dashboard for Multi-vendor Marketplaces</li>
-            <li>Ready for any Content: Fashion, Electronics, Digital (Downloadable) Products, etc.</li>
-            <li>Blog Pages: Blog Layouts + Single Post</li>
-            <li>Help Center / Support Pages</li>
-            <li>Secondary Pages: About, Contacts, 404, etc.</li>
-            <li>40+ Flexible Components</li>
+            <li><i class="far fa-check-circle text-success"></i>Shop Grid / List Layout Options</li>
+            <li><i class="far fa-check-circle text-success"></i>Multiple Product Page Variations</li>
+            <li><i class="far fa-check-circle text-success"></i>Complete Order Workflow: Cart + Checkout</li>
+            <li><i class="far fa-check-circle text-success"></i>Shop Customer Account Pages</li>
+            <li><i class="far fa-check-circle text-success"></i>Vendor Dashboard for Multi-vendor Marketplaces</li>
+            <li><i class="far fa-check-circle text-success"></i>Ready for any Content: Fashion, Electronics, Digital
+              (Downloadable) Products, etc.</li>
+            <li><i class="far fa-check-circle text-success"></i>Blog Pages: Blog Layouts + Single Post</li>
+            <li><i class="far fa-check-circle text-success"></i>Help Center / Support Pages</li>
+            <li><i class="far fa-check-circle text-success"></i>Secondary Pages: About, Contacts, 404, etc.</li>
+            <li><i class="far fa-check-circle text-success"></i>40+ Flexible Components</li>
           </ul>
         </div>
         <div class="col-md-8">
@@ -213,7 +405,7 @@
           <img src="https://cartzilla.createx.studio/img/intro/qrcode.png" alt="QR code" width="150">
         </div>
         <div class="col-md-6">
-          <img src="https://cartzilla.createx.studio/img/intro/handheld-toolbar.jpg" alt="Background">
+          <img src="https://cartzilla.createx.studio/img/intro/handheld-toolbar.jpg" alt="Background" width="100%" height="auto">
         </div>
       </div>
     </div>
@@ -225,73 +417,85 @@
         <div class="col-lg-3 col-md-4 col-sm-6 pb-2">
           <img class="mb-3" src="https://cartzilla.createx.studio/img/intro/features/01.png" alt="Glup icon" width="90">
           <h6>Kick-start Your Development</h6>
-          <p class="text-muted">Start your development process fast and easy with Node.js and Gulp setup. Configuration files are included
+          <p class="text-muted">Start your development process fast and easy with Node.js and Gulp setup. Configuration
+            files are included
             in download package. Full tasks automation.</p>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 pb-2">
           <img class="mb-3" src="https://cartzilla.createx.studio/img/intro/features/02.png" alt="Sass icon" width="90">
           <h6>Easy to Customize with Sass</h6>
-          <p class="text-muted">Cartzilla is built using Sass. Easily change colors, typography and much more. It is the most mature,
+          <p class="text-muted">Cartzilla is built using Sass. Easily change colors, typography and much more. It is the
+            most mature,
             stable, and powerful CSS extension language in the world.</p>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 pb-2">
           <img class="mb-3" src="https://cartzilla.createx.studio/img/intro/features/03.png" alt="Pug icon" width="90">
           <h6>Pug - Node Templating Engine</h6>
-          <p class="text-muted">No need to write huge amount of HTML, if you don’t want to. Pug provides features not available in plain
+          <p class="text-muted">No need to write huge amount of HTML, if you don’t want to. Pug provides features not
+            available in plain
             HTML like variables, includes, mixins, functions, etc.</p>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 pb-2">
           <img class="mb-3" src="https://cartzilla.createx.studio/img/intro/features/04.png" alt="BS4 icon" width="90">
           <h6>Built With Bootstrap 4</h6>
-          <p class="text-muted">Cartzilla is the powerful e-commerce front-end solution based on Bootstrap 4 - the world's most popular
+          <p class="text-muted">Cartzilla is the powerful e-commerce front-end solution based on Bootstrap 4 - the
+            world's most popular
             responsive, mobile-first front-end component library.</p>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 pb-2">
           <img src="https://cartzilla.createx.studio/img/intro/features/05.png" alt="Components icon" width="90">
           <h6>40+ Flexible Components</h6>
-          <p class="text-muted">Besides styling all default Bootstrap 4 components Cartzilla introduces lots of new flexible, customizable
+          <p class="text-muted">Besides styling all default Bootstrap 4 components Cartzilla introduces lots of new
+            flexible, customizable
             and reusable elements you can use across the website.</p>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 pb-2">
           <img src="https://cartzilla.createx.studio/img/intro/features/06.png" alt="Mobile icon" width="90">
           <h6>Mobile Friendly Interface</h6>
-          <p class="text-muted">It's not a surprise that nowadays over 70% of users shop online using their mobile devices. Cartzilla is
+          <p class="text-muted">It's not a surprise that nowadays over 70% of users shop online using their mobile
+            devices. Cartzilla is
             100% responsive and optimized for small touch screens.</p>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 pb-2">
           <img src="https://cartzilla.createx.studio/img/intro/features/07.png" alt="Google font icon" width="90">
           <h6>Google Fonts</h6>
-          <p class="text-muted">Cartzilla uses Google fonts which are free, fast to load and of very high quality. Currently Google fonts
+          <p class="text-muted">Cartzilla uses Google fonts which are free, fast to load and of very high quality.
+            Currently Google fonts
             library includes 870+ font families to choose from.</p>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 pb-2">
           <img src="https://cartzilla.createx.studio/img/intro/features/08.png" alt="Touch icon" width="90">
           <h6>Touch-enabled Sliders</h6>
-          <p class="text-muted">In the era of touch screens it's important to ensure great user experience on handheld devices, especially
+          <p class="text-muted">In the era of touch screens it's important to ensure great user experience on handheld
+            devices, especially
             when it comes to such frequently used interface component as slider.</p>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 pb-2">
           <img src="https://cartzilla.createx.studio/img/intro/features/09.png" alt="Vector icon" width="90">
           <h6>Vector Based HD Ready Icons</h6>
-          <p class="text-muted">Cartzilla is equiped with font-based icon pack to ensure that infographics and interface icons look sharp
+          <p class="text-muted">Cartzilla is equiped with font-based icon pack to ensure that infographics and interface
+            icons look sharp
             on any device with any screen resolution and pixel density.</p>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 pb-2">
           <img src="https://cartzilla.createx.studio/img/intro/features/10.png" alt="HTML5 icon" width="90">
           <h6>W3C Valid HTML Code</h6>
-          <p class="text-muted">All HTML files are checked via W3C validator to ensure 100% valid code. As you probably know invalid HTML
+          <p class="text-muted">All HTML files are checked via W3C validator to ensure 100% valid code. As you probably
+            know invalid HTML
             limits innovation, but Cartzilla is innovative at its core.</p>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 pb-2">
           <img src="https://cartzilla.createx.studio/img/intro/features/11.png" alt="JS icon" width="90">
           <h6>Future-proof JavaScript</h6>
-          <p class="text-muted">Cartzilla core scripts as well as all dependencies are written in vanilla JS. The only component that
+          <p class="text-muted">Cartzilla core scripts as well as all dependencies are written in vanilla JS. The only
+            component that
             requires jQuery is Bootstrap itself. But that will change soon.</p>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 pb-2">
           <img src="https://cartzilla.createx.studio/img/intro/features/12.png" alt="Documentation icon" width="90">
           <h6>Detailed Documentation</h6>
-          <p class="text-muted">Download package includes links to online documentation. It covers all crucial information about how to get
+          <p class="text-muted">Download package includes links to online documentation. It covers all crucial
+            information about how to get
             started, customize template and components usage.</p>
         </div>
       </div>
@@ -304,7 +508,7 @@
         <div class="col-md-10 mx-auto">
           <h3 class="font-weight-light">Still not convinced?</h3>
           <h2 class="pb-4">Add premium support and lifetime updates to this.</h2>
-          <a class="btn btn-primary" href="#">Buy Cartzilla</a>
+          <a class="btn btn-primary shadow" href="#">Buy Cartzilla</a>
         </div>
       </div>
       <hr class="my-5">
@@ -313,7 +517,7 @@
       </div>
     </div>
   </footer>
-  <a id="btn-back" href="#"><i id="icon" class="fas fa-chevron-up"></i></a>
+  <a id="btn-back" href="#"><i id="icon" class="fas fa-chevron-up m-0"></i></a>
 </body>
 
 </html>
